@@ -24,7 +24,7 @@ export class AboutPage implements OnInit {
     this.leaderservice.getLeaders()
       .subscribe(leaders => this.leaders = leaders,
         errmess => this.errMess = <any>errmess);
-  }  
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutPage');
