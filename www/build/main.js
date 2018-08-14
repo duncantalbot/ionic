@@ -46,7 +46,7 @@ var AboutPage = /** @class */ (function () {
     };
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\src\pages\about\about.html"*/'<!--\n\n  Generated template for the AboutPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>About Us</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-card>\n\n    <ion-card-header color="primary">Our History</ion-card-header>\n\n    <ion-card-content>\n\n      <p text-wrap>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With\n\n        its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele\n\n        in Hong Kong. Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive\n\n        on your plate the next time you visit us. The restaurant traces its humble beginnings to The Frying Pan, a successful\n\n        chain started by our CEO, Mr. Peter Pan, that featured for the first time the world\'s best cuisines in a pan.</p>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <ion-card *ngIf="leaders">\n\n    <ion-card-header color="primary">Corporate Leadership</ion-card-header>\n\n    <ion-card-content>\n\n      <ion-list>\n\n        <ion-item *ngFor="let leader of leaders">\n\n          <ion-avatar item-start>\n\n            <img src="{{BaseURL + leader.image}}">\n\n          </ion-avatar>\n\n          <h2>{{leader.name}}</h2>\n\n          <h3>{{leader.designation}}</h3>\n\n          <p text-wrap>{{leader.description}}</p>\n\n        </ion-item>\n\n      </ion-list>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <div [hidden]="leaders || errMess">\n\n    <ion-spinner></ion-spinner>\n\n    <h4>Loading . . . Please Wait</h4>\n\n  </div>\n\n  <div *ngIf="errMess">\n\n    <h2>Error</h2>\n\n    <h4>{{errMess}}</h4>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\src\pages\about\about.html"*/,
+            selector: 'page-about',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\about\about.html"*/'<!--\n\n  Generated template for the AboutPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>About Us</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-card>\n\n    <ion-card-header color="primary">Our History</ion-card-header>\n\n    <ion-card-content>\n\n      <p text-wrap>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With\n\n        its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele\n\n        in Hong Kong. Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive\n\n        on your plate the next time you visit us. The restaurant traces its humble beginnings to The Frying Pan, a successful\n\n        chain started by our CEO, Mr. Peter Pan, that featured for the first time the world\'s best cuisines in a pan.</p>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <ion-card *ngIf="leaders">\n\n    <ion-card-header color="primary">Corporate Leadership</ion-card-header>\n\n    <ion-card-content>\n\n      <ion-list>\n\n        <ion-item *ngFor="let leader of leaders">\n\n          <ion-avatar item-start>\n\n            <img src="{{BaseURL + leader.image}}">\n\n          </ion-avatar>\n\n          <h2>{{leader.name}}</h2>\n\n          <h3>{{leader.designation}}</h3>\n\n          <p text-wrap>{{leader.description}}</p>\n\n        </ion-item>\n\n      </ion-list>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <div [hidden]="leaders || errMess">\n\n    <ion-spinner></ion-spinner>\n\n    <h4>Loading . . . Please Wait</h4>\n\n  </div>\n\n  <div *ngIf="errMess">\n\n    <h2>Error</h2>\n\n    <h4>{{errMess}}</h4>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\about\about.html"*/,
         }),
         __param(3, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Inject */])('BaseURL')),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_leader_leader__["a" /* LeaderProvider */], Object])
@@ -92,7 +92,7 @@ var ContactPage = /** @class */ (function () {
     };
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\src\pages\contact\contact.html"*/'<!--\n\n  Generated template for the ContactPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Contact Us</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n  <ion-card>\n\n    <ion-card-header color="primary">Location Information</ion-card-header>\n\n    <ion-card-content>      \n\n      <address>\n\n        121, Clear Water Bay Road<br/>\n\n        Clear Water Bay, Kowloon<br/>\n\n        HONG KONG<br/>\n\n        <ion-icon name="call"></ion-icon>: +852 1234 5678<br/>\n\n        <ion-icon name="print"></ion-icon>: +852 8765 4321<br/>\n\n        <ion-icon name="mail"></ion-icon>: confusion@food.net\n\n      </address>\n\n    </ion-card-content>\n\n    <ion-row>\n\n      <ion-col>\n\n        <button ion-button icon-left clear small>\n\n          <ion-icon name="call"></ion-icon>\n\n          <div>CALL</div>\n\n        </button>\n\n      </ion-col>\n\n      <ion-col>\n\n        <button ion-button icon-left clear small>\n\n          <ion-icon name="mail"></ion-icon>\n\n          <div>EMAIL</div>\n\n        </button>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\src\pages\contact\contact.html"*/,
+            selector: 'page-contact',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\contact\contact.html"*/'<!--\n\n  Generated template for the ContactPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Contact Us</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n  <ion-card>\n\n    <ion-card-header color="primary">Location Information</ion-card-header>\n\n    <ion-card-content>      \n\n      <address>\n\n        121, Clear Water Bay Road<br/>\n\n        Clear Water Bay, Kowloon<br/>\n\n        HONG KONG<br/>\n\n        <ion-icon name="call"></ion-icon>: +852 1234 5678<br/>\n\n        <ion-icon name="print"></ion-icon>: +852 8765 4321<br/>\n\n        <ion-icon name="mail"></ion-icon>: confusion@food.net\n\n      </address>\n\n    </ion-card-content>\n\n    <ion-row>\n\n      <ion-col>\n\n        <button ion-button icon-left clear small>\n\n          <ion-icon name="call"></ion-icon>\n\n          <div>CALL</div>\n\n        </button>\n\n      </ion-col>\n\n      <ion-col>\n\n        <button ion-button icon-left clear small>\n\n          <ion-icon name="mail"></ion-icon>\n\n          <div>EMAIL</div>\n\n        </button>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\contact\contact.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], ContactPage);
@@ -110,6 +110,7 @@ var ContactPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DishdetailPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_favorite_favorite__ = __webpack_require__(297);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -124,6 +125,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 
 
+
 /**
  * Generated class for the DishdetailPage page.
  *
@@ -131,27 +133,34 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
  * on Ionic pages and navigation.
  */
 var DishdetailPage = /** @class */ (function () {
-    function DishdetailPage(navCtrl, navParams, BaseURL) {
+    function DishdetailPage(navCtrl, navParams, BaseURL, favoriteservice) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.BaseURL = BaseURL;
+        this.favoriteservice = favoriteservice;
         this.dish = navParams.get('dish');
+        this.favorite = favoriteservice.isFavorite(this.dish.id);
         this.numcomments = this.dish.comments.length;
         var total = 0;
         this.dish.comments.forEach(function (comment) { return total += comment.rating; });
         this.avgstars = (total / this.numcomments).toFixed(2);
     }
+    DishdetailPage.prototype.addToFavorites = function () {
+        console.log('Adding to Favorites', this.dish.id);
+        this.favorite = this.favoriteservice.addFavorite(this.dish.id);
+    };
     DishdetailPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad DishdetailPage');
     };
     DishdetailPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-dishdetail',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\src\pages\dishdetail\dishdetail.html"*/'<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <ion-title>Dish Details</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-card *ngIf="dish">\n\n    <img src="{{BaseURL + dish.image}}" />\n\n    <ion-card-content>\n\n      <ion-card-title>\n\n        {{dish.name | uppercase}}\n\n      </ion-card-title>\n\n      <p>\n\n        {{dish.description}}\n\n      </p>\n\n    </ion-card-content>\n\n    <ion-row>\n\n      <ion-col>\n\n        <button ion-button icon-left clear small>\n\n          <ion-icon name="star"></ion-icon>\n\n          <div>{{ avgstars }} stars</div>\n\n        </button>\n\n      </ion-col>\n\n      <ion-col>\n\n        <button ion-button icon-left clear small>\n\n          <ion-icon name="text"></ion-icon>\n\n          <div>{{ numcomments }} Comments</div>\n\n        </button>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-card>\n\n  <div [hidden]="dish || errMess">\n\n    <ion-spinner></ion-spinner>\n\n    <h4>Loading . . . Please Wait</h4>\n\n  </div>\n\n  <div *ngIf="errMess">\n\n    <h2>Error</h2>\n\n    <h4>{{errMess}}</h4>\n\n  </div>\n\n\n\n  <ion-list *ngIf="dish">\n\n    <ion-list-header>\n\n      Comments\n\n    </ion-list-header>\n\n    <ion-item *ngFor="let comment of dish.comments" text-wrap>\n\n      <h4> {{comment.comment}} </h4>\n\n      <p> {{comment.rating}} Stars</p>\n\n      <p>\n\n        <span> -- {{comment.author}} {{comment.date | date }} </span>\n\n      </p>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\src\pages\dishdetail\dishdetail.html"*/,
+            selector: 'page-dishdetail',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\dishdetail\dishdetail.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>Dish Details</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card *ngIf="dish">\n    <img src="{{BaseURL + dish.image}}" />\n    <ion-card-content>\n      <ion-card-title>\n        {{dish.name | uppercase}}\n      </ion-card-title>\n      <p>\n        {{dish.description}}\n      </p>\n    </ion-card-content>\n    <ion-row>\n      <ion-col>\n        <button ion-button icon-left clear small>\n          <ion-icon name="star"></ion-icon>\n          <div>{{ avgstars }} stars</div>\n        </button>\n      </ion-col>\n      <ion-col>\n        <button ion-button icon-left clear small>\n          <ion-icon name="text"></ion-icon>\n          <div>{{ numcomments }} Comments</div>\n        </button>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n  <div [hidden]="dish || errMess">\n    <ion-spinner></ion-spinner>\n    <h4>Loading . . . Please Wait</h4>\n  </div>\n  <div *ngIf="errMess">\n    <h2>Error</h2>\n    <h4>{{errMess}}</h4>\n  </div>\n\n  <ion-list *ngIf="dish">\n    <ion-list-header>\n      Comments\n    </ion-list-header>\n    <ion-item *ngFor="let comment of dish.comments" text-wrap>\n      <h4> {{comment.comment}} </h4>\n      <p> {{comment.rating}} Stars</p>\n      <p>\n        <span> -- {{comment.author}} {{comment.date | date }} </span>\n      </p>\n    </ion-item>\n  </ion-list>\n\n  <ion-fab bottom right [hidden]="favorite">\n    <button ion-fab (click)="addToFavorites()">\n      <ion-icon name="heart-outline"></ion-icon>\n    </button>\n  </ion-fab>\n  <ion-fab bottom right *ngIf="favorite">\n    <button ion-fab>\n      <ion-icon name="heart"></ion-icon>\n    </button>\n  </ion-fab>\n\n</ion-content>\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\dishdetail\dishdetail.html"*/,
         }),
         __param(2, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Inject */])('BaseURL')),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_favorite_favorite__["a" /* FavoriteProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_favorite_favorite__["a" /* FavoriteProvider */]) === "function" && _c || Object])
     ], DishdetailPage);
     return DishdetailPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=dishdetail.js.map
@@ -212,7 +221,7 @@ var MenuPage = /** @class */ (function () {
     };
     MenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-menu',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\src\pages\menu\menu.html"*/'<!--\n\n  Generated template for the MenuPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Menu</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content class="card-background-page">\n\n\n\n  <div *ngIf="dishes">\n\n  <ion-card *ngFor="let dish of dishes" (click)="dishSelected($event, dish)">\n\n    <img src="{{BaseURL + dish.image}}"/>\n\n    <div class="card-title">{{dish.name}}</div>\n\n    <div class="card-subtitle">{{dish.description}}</div>\n\n  </ion-card>\n\n  </div>\n\n  <div [hidden]="dishes || errMess">\n\n    <ion-spinner></ion-spinner>\n\n    <h4>Loading . . . Please Wait</h4>\n\n  </div>\n\n  <div *ngIf="errMess">\n\n    <h2>Error</h2>\n\n    <h4>{{errMess}}</h4>\n\n  </div>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\src\pages\menu\menu.html"*/,
+            selector: 'page-menu',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\menu\menu.html"*/'<!--\n\n  Generated template for the MenuPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Menu</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content class="card-background-page">\n\n\n\n  <div *ngIf="dishes">\n\n  <ion-card *ngFor="let dish of dishes" (click)="dishSelected($event, dish)">\n\n    <img src="{{BaseURL + dish.image}}"/>\n\n    <div class="card-title">{{dish.name}}</div>\n\n    <div class="card-subtitle">{{dish.description}}</div>\n\n  </ion-card>\n\n  </div>\n\n  <div [hidden]="dishes || errMess">\n\n    <ion-spinner></ion-spinner>\n\n    <h4>Loading . . . Please Wait</h4>\n\n  </div>\n\n  <div *ngIf="errMess">\n\n    <h2>Error</h2>\n\n    <h4>{{errMess}}</h4>\n\n  </div>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\menu\menu.html"*/,
         }),
         __param(3, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Inject */])('BaseURL')),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
@@ -325,7 +334,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n  <ion-card *ngIf="dish">\n    <img src="{{BaseURL + dish.image}}"/>\n    <ion-card-content>\n      <ion-card-title>\n        {{dish.name | uppercase}}\n      </ion-card-title>\n      <p>\n        {{dish.description}}\n      </p>\n    </ion-card-content>\n  </ion-card>\n  <div [hidden]="dish || dishErrMess">\n    <ion-spinner></ion-spinner>\n    <h4>Loading . . . Please Wait</h4>\n  </div>\n  <div *ngIf="dishErrMess">\n    <h2>Error</h2>\n    <h4>{{dishErrMess}}</h4>\n  </div>\n\n  <ion-card *ngIf="promotion">\n    <img src="{{BaseURL + promotion.image}}"/>\n    <ion-card-content>\n      <ion-card-title>\n        {{promotion.name | uppercase}}\n      </ion-card-title>\n      <p>\n        {{promotion.description}}\n      </p>\n    </ion-card-content>\n  </ion-card>\n  <div [hidden]="promotion || promoErrMess">\n    <ion-spinner></ion-spinner>\n    <h4>Loading . . . Please Wait</h4>\n  </div>\n  <div *ngIf="promoErrMess">\n    <h2>Error</h2>\n    <h4>{{promoErrMess}}</h4>\n  </div>\n\n  <ion-card *ngIf="leader">\n    <img src="{{BaseURL + leader.image}}"/>\n    <ion-card-content>\n      <ion-card-title>\n        {{leader.name | uppercase}}\n      </ion-card-title>\n      <p>\n        {{leader.designation}}\n      </p>\n      <p>\n        {{leader.description}}\n      </p>\n    </ion-card-content>\n  </ion-card>\n  <div [hidden]="leader || leaderErrMess">\n    <ion-spinner></ion-spinner>\n    <h4>Loading . . . Please Wait</h4>\n  </div>\n  <div *ngIf="leaderErrMess">\n    <h2>Error</h2>\n    <h4>{{leaderErrMess}}</h4>\n  </div>\n\n  <ion-fab right bottom>\n    <button ion-fab color="accent"><ion-icon name="arrow-dropup"></ion-icon></button>\n    <ion-fab-list side="top">\n      <button ion-fab class="btn-mail"><ion-icon name="mail"></ion-icon></button>\n      <button ion-fab class="btn-google-plus"><ion-icon name="logo-googleplus"></ion-icon></button>\n      <button ion-fab class="btn-youtube"><ion-icon name="logo-youtube"></ion-icon></button>\n      <button ion-fab class="btn-twitter"><ion-icon name="logo-twitter"></ion-icon></button>\n      <button ion-fab class="btn-facebook"><ion-icon name="logo-facebook"></ion-icon></button>\n      <button ion-fab class="btn-linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>\n    </ion-fab-list>\n  </ion-fab>\n\n</ion-content>\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\home\home.html"*/'<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-card *ngIf="dish">\n\n    <img src="{{BaseURL + dish.image}}"/>\n\n    <ion-card-content>\n\n      <ion-card-title>\n\n        {{dish.name | uppercase}}\n\n      </ion-card-title>\n\n      <p>\n\n        {{dish.description}}\n\n      </p>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <div [hidden]="dish || dishErrMess">\n\n    <ion-spinner></ion-spinner>\n\n    <h4>Loading . . . Please Wait</h4>\n\n  </div>\n\n  <div *ngIf="dishErrMess">\n\n    <h2>Error</h2>\n\n    <h4>{{dishErrMess}}</h4>\n\n  </div>\n\n\n\n  <ion-card *ngIf="promotion">\n\n    <img src="{{BaseURL + promotion.image}}"/>\n\n    <ion-card-content>\n\n      <ion-card-title>\n\n        {{promotion.name | uppercase}}\n\n      </ion-card-title>\n\n      <p>\n\n        {{promotion.description}}\n\n      </p>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <div [hidden]="promotion || promoErrMess">\n\n    <ion-spinner></ion-spinner>\n\n    <h4>Loading . . . Please Wait</h4>\n\n  </div>\n\n  <div *ngIf="promoErrMess">\n\n    <h2>Error</h2>\n\n    <h4>{{promoErrMess}}</h4>\n\n  </div>\n\n\n\n  <ion-card *ngIf="leader">\n\n    <img src="{{BaseURL + leader.image}}"/>\n\n    <ion-card-content>\n\n      <ion-card-title>\n\n        {{leader.name | uppercase}}\n\n      </ion-card-title>\n\n      <p>\n\n        {{leader.designation}}\n\n      </p>\n\n      <p>\n\n        {{leader.description}}\n\n      </p>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <div [hidden]="leader || leaderErrMess">\n\n    <ion-spinner></ion-spinner>\n\n    <h4>Loading . . . Please Wait</h4>\n\n  </div>\n\n  <div *ngIf="leaderErrMess">\n\n    <h2>Error</h2>\n\n    <h4>{{leaderErrMess}}</h4>\n\n  </div>\n\n\n\n  <ion-fab right bottom>\n\n    <button ion-fab color="accent"><ion-icon name="arrow-dropup"></ion-icon></button>\n\n    <ion-fab-list side="top">\n\n      <button ion-fab class="btn-mail"><ion-icon name="mail"></ion-icon></button>\n\n      <button ion-fab class="btn-google-plus"><ion-icon name="logo-googleplus"></ion-icon></button>\n\n      <button ion-fab class="btn-youtube"><ion-icon name="logo-youtube"></ion-icon></button>\n\n      <button ion-fab class="btn-twitter"><ion-icon name="logo-twitter"></ion-icon></button>\n\n      <button ion-fab class="btn-facebook"><ion-icon name="logo-facebook"></ion-icon></button>\n\n      <button ion-fab class="btn-linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>\n\n    </ion-fab-list>\n\n  </ion-fab>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\home\home.html"*/
         }),
         __param(4, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Inject */])('BaseURL')),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
@@ -448,12 +457,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_promotion_promotion__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_process_httpmsg_process_httpmsg__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__shared_baseurl__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_favorite_favorite__ = __webpack_require__(297);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -513,7 +524,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_13__providers_leader_leader__["a" /* LeaderProvider */],
                 __WEBPACK_IMPORTED_MODULE_14__providers_promotion_promotion__["a" /* PromotionProvider */],
                 __WEBPACK_IMPORTED_MODULE_15__providers_process_httpmsg_process_httpmsg__["a" /* ProcessHttpmsgProvider */],
-                { provide: 'BaseURL', useValue: __WEBPACK_IMPORTED_MODULE_16__shared_baseurl__["a" /* baseURL */] }
+                { provide: 'BaseURL', useValue: __WEBPACK_IMPORTED_MODULE_16__shared_baseurl__["a" /* baseURL */] },
+                __WEBPACK_IMPORTED_MODULE_17__providers_favorite_favorite__["a" /* FavoriteProvider */]
             ]
         })
     ], AppModule);
@@ -588,7 +600,7 @@ var MyApp = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar color="primary-dark">\n      <ion-title>Ristorante Con Fusion</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button  color="primary-pale" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        <ion-icon [name]="p.icon" item-left></ion-icon>\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar color="primary-dark">\n\n      <ion-title>Ristorante Con Fusion</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <button  color="primary-pale" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        <ion-icon [name]="p.icon" item-left></ion-icon>\n\n        {{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -596,6 +608,55 @@ var MyApp = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 297:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FavoriteProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/*
+  Generated class for the FavoriteProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var FavoriteProvider = /** @class */ (function () {
+    function FavoriteProvider(http) {
+        this.http = http;
+        console.log('Hello FavoriteProvider Provider');
+        this.favorites = [];
+    }
+    FavoriteProvider.prototype.addFavorite = function (id) {
+        this.favorites.push(id);
+        return true;
+    };
+    FavoriteProvider.prototype.isFavorite = function (id) {
+        return this.favorites.some(function (el) { return el === id; });
+    };
+    FavoriteProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_http__["a" /* Http */]) === "function" && _a || Object])
+    ], FavoriteProvider);
+    return FavoriteProvider;
+    var _a;
+}());
+
+//# sourceMappingURL=favorite.js.map
 
 /***/ }),
 
