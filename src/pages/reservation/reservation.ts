@@ -41,5 +41,4 @@ export class ReservationPage {
     console.log(this.reservation.value);
     this.viewCtrl.dismiss();
   }
-
 }
