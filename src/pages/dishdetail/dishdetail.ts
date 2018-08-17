@@ -35,8 +35,8 @@ export class DishdetailPage {
     this.favorite = favoriteservice.isFavorite(this.dish.id);
     this.numcomments = this.dish.comments.length;
     let total = 0;
-    this.dish.comments.forEach(comment => total += comment.rating );
-    this.avgstars = (total/this.numcomments).toFixed(2);
+    this.dish.comments.forEach(comment => total += comment.rating);
+    this.avgstars = (total / this.numcomments).toFixed(2);
   }
 
   presentActionSheet() {
@@ -50,14 +50,14 @@ export class DishdetailPage {
             this.addToFavorites();
             console.log('Add to favourites clicked clicked');
           }
-        },{
+        }, {
           text: 'Add Comment',
           role: 'addacomment',
           handler: () => {
-            this.openComment();
+            this.newComment();
             console.log('Add a comment clicked');
           }
-        },{
+        }, {
           text: 'Cancel',
           role: 'cancel',
           handler: () => {
@@ -75,17 +75,16 @@ export class DishdetailPage {
     this.toastCtrl.create({
       message: 'Dish ' + this.dish.id + ' added as favorite successfully',
       position: 'middle',
-      duration: 3000}).present();
+      duration: 3000
+    }).present();
   }
 
-  openComment() {
+  newComment() {
     let modal = this.modalCtrl.create(CommentPage);
     modal.onDidDismiss(data => {
-      this.comment = data.value;
-      console.log(this.comment.author);
-      var da = new Date();
-      this.comment.date = da.toISOString();
-      this.dish.comments.push(this.comment);
+      if (data) {
+        this.dish.comments.push(data);
+      }
     });
     modal.present();
   }

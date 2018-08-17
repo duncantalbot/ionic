@@ -90,7 +90,7 @@ var CommentPage = /** @class */ (function () {
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
         this.formBuilder = formBuilder;
-        this.comment = this.formBuilder.group({
+        this.commentForm = this.formBuilder.group({
             author: '',
             rating: 1,
             comment: '',
@@ -103,11 +103,14 @@ var CommentPage = /** @class */ (function () {
         this.viewCtrl.dismiss();
     };
     CommentPage.prototype.onSubmit = function () {
+        this.comment = this.commentForm.value;
+        var da = new Date();
+        this.comment.date = da.toISOString();
         this.viewCtrl.dismiss(this.comment);
     };
     CommentPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-comment',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\comment\comment.html"*/'<!--\n  Generated template for the CommentPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n    <ion-toolbar color="primary-light">\n      <ion-buttons start>\n        <button ion-button (click)="dismiss()">\n          <span ion-text color="primary" showWhen="ios">Cancel</span>\n          <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n        </button>\n      </ion-buttons>\n      <ion-title>Reserve Table</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content padding>\n      <form [formGroup]="comment" (ngSubmit)="onSubmit()">\n          <ion-item>\n              <ion-label color="primary" floating>Your Name</ion-label>\n              <ion-input formControlName="author"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label color="primary" floating>Your Rating</ion-label>\n                <ion-range formControlName="rating" snaps="true" color="primary" min="1" max="5" step="1" pin="true">\n                    <ion-icon small range-left name="sad"></ion-icon>\n                    <ion-icon range-right name="happy"></ion-icon>\n                </ion-range>\n              </ion-item>\n          <ion-item>\n              <ion-label color="primary" floating>Your Comment</ion-label>\n              <ion-textarea formControlName="comment" rows="12"></ion-textarea>\n          </ion-item>\n          <button ion-button type="submit" [disabled]="!comment.valid">Reserve</button>\n        </form>\n  </ion-content>\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\comment\comment.html"*/,
+            selector: 'page-comment',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\comment\comment.html"*/'<!--\n  Generated template for the CommentPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n    <ion-toolbar color="primary-light">\n      <ion-buttons start>\n        <button ion-button (click)="dismiss()">\n          <span ion-text color="primary" showWhen="ios">Cancel</span>\n          <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n        </button>\n      </ion-buttons>\n      <ion-title>Add Comment</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content padding>\n      <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">\n          <ion-item>\n              <ion-label color="primary" floating>Your Name</ion-label>\n              <ion-input formControlName="author" required></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label color="primary" floating>Your Rating</ion-label>\n                <ion-range formControlName="rating" required snaps="true" color="primary" min="1" max="5" step="1" pin="true">\n                    <ion-icon small range-left name="sad"></ion-icon>\n                    <ion-icon range-right name="happy"></ion-icon>\n                </ion-range>\n              </ion-item>\n          <ion-item>\n              <ion-label color="primary" floating>Your Comment</ion-label>\n              <ion-textarea formControlName="comment" required rows="12"></ion-textarea>\n          </ion-item>\n          <button ion-button type="submit" [disabled]="!commentForm.valid">Reserve</button>\n        </form>\n  </ion-content>\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\comment\comment.html"*/,
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]) === "function" && _d || Object])
     ], CommentPage);
@@ -227,7 +230,7 @@ var DishdetailPage = /** @class */ (function () {
                     text: 'Add Comment',
                     role: 'addacomment',
                     handler: function () {
-                        _this.openComment();
+                        _this.newComment();
                         console.log('Add a comment clicked');
                     }
                 }, {
@@ -250,15 +253,13 @@ var DishdetailPage = /** @class */ (function () {
             duration: 3000
         }).present();
     };
-    DishdetailPage.prototype.openComment = function () {
+    DishdetailPage.prototype.newComment = function () {
         var _this = this;
         var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__pages_comment_comment__["a" /* CommentPage */]);
         modal.onDidDismiss(function (data) {
-            _this.comment = data.value;
-            console.log(_this.comment.author);
-            var da = new Date();
-            _this.comment.date = da.toISOString();
-            _this.dish.comments.push(_this.comment);
+            if (data) {
+                _this.dish.comments.push(data);
+            }
         });
         modal.present();
     };
