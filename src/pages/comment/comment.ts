@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { Comment } from '../../shared/comment';
 
 /**
@@ -25,9 +25,9 @@ export class CommentPage {
     private formBuilder: FormBuilder) {
 
     this.commentForm = this.formBuilder.group({
-      author: '',
+      author: ['', Validators.required],
       rating: 1,
-      comment: '',
+      comment: ['', Validators.required],
     });
   }
 
