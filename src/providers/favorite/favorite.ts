@@ -2,6 +2,7 @@ import { Http, Response } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Dish } from '../../shared/dish';
 import { Observable } from 'rxjs/Observable';
+import { Storage } from '@ionic/storage';
 import { DishProvider } from '../dish/dish';
 
 /*
@@ -10,21 +11,32 @@ import { DishProvider } from '../dish/dish';
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
 */
+
+const STORAGE_KEY = 'favoriteDishes';
+
 @Injectable()
 export class FavoriteProvider {
 
   favorites: Array<any>;
 
-  constructor(public http: Http, private dishservice: DishProvider) {
+  constructor(public http: Http, private dishservice: DishProvider, private storage: Storage) {
+    storage.get('favoriteDishes').then(data => {
+      if (data) {
+        this.favorites = data;
+      }
+      else
+        console.log('favourite dishes not defined');
+    });
     console.log('Hello FavoriteProvider Provider');
-    this.favorites = [];
   }
 
   addFavorite(id: number): boolean {
     if (!this.isFavorite(id))
+    {
       this.favorites.push(id);
-    console.log('favorites', this.favorites);
-    return true;
+      this.storage.set(STORAGE_KEY, this.favorites);
+      return true;
+    }
   }
 
   getFavorites(): Observable<Dish[]> {
@@ -36,6 +48,7 @@ export class FavoriteProvider {
     let index = this.favorites.indexOf(id);
     if (index >= 0) {
       this.favorites.splice(index,1);
+      this.storage.set(STORAGE_KEY, this.favorites);
       return this.getFavorites();
     }
     else {
