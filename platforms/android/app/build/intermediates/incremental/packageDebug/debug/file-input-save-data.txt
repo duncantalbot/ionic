@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Aug 21 12:40:38 AEST 2018
+#Fri Aug 24 13:47:59 AEST 2018
 76.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 5.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 86.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
@@ -89,7 +89,7 @@
 71.set=ASSET
 82.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\build\\2.js.map
 33.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\assets\\debug
-66.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-xxhdpi-v4\\icon.png
+66.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xhdpi-v4\\screen.png
 17.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 27.set=ASSET
 76.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\build\\4.js.map
@@ -146,7 +146,7 @@ count=87
 59.set=ASSET
 48.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 30.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\assets\\debug
-63.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-ldpi-v4\\icon.png
+63.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-mdpi-v4\\screen.png
 58.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 73.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\cordova-js-src\\platform.js
 30.set=ASSET
@@ -156,7 +156,7 @@ count=87
 81.set=ASSET
 83.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\plugins\\cordova-plugin-ionic-keyboard\\www\\android\\keyboard.js
 34.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
-67.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xhdpi-v4\\screen.png
+67.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-xxhdpi-v4\\icon.png
 18.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 37.set=ASSET
 77.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xxxhdpi-v4\\screen.png
@@ -213,7 +213,7 @@ count=87
 69.set=ANDROID_RESOURCE
 49.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 31.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\assets\\debug
-64.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-mdpi-v4\\screen.png
+64.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-ldpi-v4\\icon.png
 59.base=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 2.set=ASSET
 74.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-hdpi-v4\\icon.png
