@@ -58,6 +58,15 @@ module.exports = [
       "cordova.plugins.notification.local.core",
       "plugin.notification.local.core"
     ]
+  },
+  {
+    "id": "cordova-plugin-email.EmailComposer",
+    "file": "plugins/cordova-plugin-email/www/email_composer.js",
+    "pluginId": "cordova-plugin-email",
+    "clobbers": [
+      "cordova.plugins.email",
+      "plugin.email"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -69,7 +78,8 @@ module.exports.metadata =
   "cordova-plugin-splashscreen": "5.0.2",
   "cordova-plugin-whitelist": "1.3.3",
   "cordova-plugin-app-event": "1.2.1",
-  "de.appplant.cordova.plugin.local-notification": "0.8.5"
+  "de.appplant.cordova.plugin.local-notification": "0.8.5",
+  "cordova-plugin-email": "1.2.7"
 };
 // BOTTOM OF METADATA
 });
