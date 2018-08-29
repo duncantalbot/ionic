@@ -48,33 +48,33 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-    });
 
-    this.network.onDisconnect().subscribe(() => {
-      if (!this.loading) {
-        this.loading = this.loadingCtrl.create({
-          content: 'Network Disconnected'
-        });
-        this.loading.present();
-      }
-    });
-
-    this.network.onConnect().subscribe(() => {
-
-      // We just got a connection but we need to wait briefly
-      // before we determine the connection type. Might need to wait.
-      // prior to doing any api requests as well.
-      setTimeout(() => {
-        if (this.network.type === 'wifi') {
-          console.log('we got a wifi connection, woohoo!');
+      this.network.onDisconnect().subscribe(() => {
+        if (!this.loading) {
+          this.loading = this.loadingCtrl.create({
+            content: 'Network Disconnected'
+          });
+          this.loading.present();
         }
-      }, 3000);
-      if (this.loading) {
-        this.loading.dismiss();
-        this.loading = null;
-      }
+      });
+
+      this.network.onConnect().subscribe(() => {
+
+        // We just got a connection but we need to wait briefly
+        // before we determine the connection type. Might need to wait.
+        // prior to doing any api requests as well.
+        setTimeout(() => {
+          if (this.network.type === 'wifi') {
+            console.log('we got a wifi connection, woohoo!');
+          }
+        }, 3000);
+        if (this.loading) {
+          this.loading.dismiss();
+          this.loading = null;
+        }
+      });
     });
-  };
+  }
 
   openPage(page) {
     // Reset the content nav to have just this page

@@ -607,69 +607,6 @@ var RegisterPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReservationPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the ReservationPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ReservationPage = /** @class */ (function () {
-    function ReservationPage(navCtrl, navParams, viewCtrl, formBuilder) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.viewCtrl = viewCtrl;
-        this.formBuilder = formBuilder;
-        this.reservation = this.formBuilder.group({
-            guests: 3,
-            smoking: false,
-            dateTime: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required],
-        });
-    }
-    ReservationPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ReservationPage');
-    };
-    ReservationPage.prototype.dismiss = function () {
-        this.viewCtrl.dismiss();
-    };
-    ReservationPage.prototype.onSubmit = function () {
-        console.log(this.reservation.value);
-        this.viewCtrl.dismiss();
-    };
-    ReservationPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-reservation',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\reservation\reservation.html"*/'<!--\n  Generated template for the ReservationPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar color="primary-pale">\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Reserve Table</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n    <form [formGroup]="reservation" (ngSubmit)="onSubmit()">\n        <ion-item>\n          <ion-label>No. of Guests</ion-label>\n          <ion-select formControlName="guests">\n            <ion-option value=1>1</ion-option>\n            <ion-option value=2>2</ion-option>\n            <ion-option value=3>3</ion-option>\n            <ion-option value=4>4</ion-option>\n            <ion-option value=5>5</ion-option>\n            <ion-option value=6>6</ion-option>\n          </ion-select>\n        </ion-item>\n        <ion-item>\n          <ion-label>Smoking?</ion-label>\n          <ion-toggle formControlName="smoking" checked="true"></ion-toggle>\n        </ion-item>\n        <ion-item>\n          <ion-label>Date and Time</ion-label>\n          <ion-datetime displayFormat="MMM DD, YYYY hh:mm A" pickerFormat="MMM DD, YYYY hh:mm A" formControlName="dateTime"></ion-datetime>\n        </ion-item>\n        <button ion-button type="submit" [disabled]="!reservation.valid">Reserve</button>\n      </form>\n</ion-content>\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\reservation\reservation.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]])
-    ], ReservationPage);
-    return ReservationPage;
-}());
-
-//# sourceMappingURL=reservation.js.map
-
-/***/ }),
-
-/***/ 119:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
@@ -747,6 +684,69 @@ var MenuPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 119:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReservationPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the ReservationPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ReservationPage = /** @class */ (function () {
+    function ReservationPage(navCtrl, navParams, viewCtrl, formBuilder) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.formBuilder = formBuilder;
+        this.reservation = this.formBuilder.group({
+            guests: 3,
+            smoking: false,
+            dateTime: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required],
+        });
+    }
+    ReservationPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ReservationPage');
+    };
+    ReservationPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    ReservationPage.prototype.onSubmit = function () {
+        console.log(this.reservation.value);
+        this.viewCtrl.dismiss();
+    };
+    ReservationPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-reservation',template:/*ion-inline-start:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\reservation\reservation.html"*/'<!--\n  Generated template for the ReservationPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar color="primary-pale">\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Reserve Table</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n    <form [formGroup]="reservation" (ngSubmit)="onSubmit()">\n        <ion-item>\n          <ion-label>No. of Guests</ion-label>\n          <ion-select formControlName="guests">\n            <ion-option value=1>1</ion-option>\n            <ion-option value=2>2</ion-option>\n            <ion-option value=3>3</ion-option>\n            <ion-option value=4>4</ion-option>\n            <ion-option value=5>5</ion-option>\n            <ion-option value=6>6</ion-option>\n          </ion-select>\n        </ion-item>\n        <ion-item>\n          <ion-label>Smoking?</ion-label>\n          <ion-toggle formControlName="smoking" checked="true"></ion-toggle>\n        </ion-item>\n        <ion-item>\n          <ion-label>Date and Time</ion-label>\n          <ion-datetime displayFormat="MMM DD, YYYY hh:mm A" pickerFormat="MMM DD, YYYY hh:mm A" formControlName="dateTime"></ion-datetime>\n        </ion-item>\n        <button ion-button type="submit" [disabled]="!reservation.valid">Reserve</button>\n      </form>\n</ion-content>\n'/*ion-inline-end:"D:\Duncan\Coursera\IonicCordova\Ionic\conFusion\ionic\src\pages\reservation\reservation.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]])
+    ], ReservationPage);
+    return ReservationPage;
+}());
+
+//# sourceMappingURL=reservation.js.map
+
+/***/ }),
+
 /***/ 129:
 /***/ (function(module, exports) {
 
@@ -793,15 +793,15 @@ var map = {
 		3
 	],
 	"../pages/menu/menu.module": [
-		316,
+		314,
 		2
 	],
 	"../pages/register/register.module": [
-		314,
+		315,
 		1
 	],
 	"../pages/reservation/reservation.module": [
-		315,
+		316,
 		0
 	]
 };
@@ -986,11 +986,11 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(307);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_home_home__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_about_about__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_menu_menu__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_menu_menu__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_contact_contact__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_dishdetail_dishdetail__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_favorites_favorites__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_reservation_reservation__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_reservation_reservation__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_comment_comment__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_login_login__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_register_register__ = __webpack_require__(117);
@@ -1065,9 +1065,9 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/dishdetail/dishdetail.module#DishdetailPageModule', name: 'DishdetailPage', segment: 'dishdetail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/favorites/favorites.module#FavoritesPageModule', name: 'FavoritesPage', segment: 'favorites', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/reservation/reservation.module#ReservationPageModule', name: 'ReservationPage', segment: 'reservation', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/reservation/reservation.module#ReservationPageModule', name: 'ReservationPage', segment: 'reservation', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* HttpModule */],
@@ -1124,10 +1124,10 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_about_about__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_menu_menu__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_menu_menu__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contact_contact__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_favorites_favorites__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_reservation_reservation__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_reservation_reservation__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_login_login__ = __webpack_require__(116);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1177,31 +1177,30 @@ var MyApp = /** @class */ (function () {
             // Here you can do any higher level native things you might need.
             _this.statusBar.styleDefault();
             _this.splashScreen.hide();
-        });
-        this.network.onDisconnect().subscribe(function () {
-            if (!_this.loading) {
-                _this.loading = _this.loadingCtrl.create({
-                    content: 'Network Disconnected'
-                });
-                _this.loading.present();
-            }
-        });
-        this.network.onConnect().subscribe(function () {
-            // We just got a connection but we need to wait briefly
-            // before we determine the connection type. Might need to wait.
-            // prior to doing any api requests as well.
-            setTimeout(function () {
-                if (_this.network.type === 'wifi') {
-                    console.log('we got a wifi connection, woohoo!');
+            _this.network.onDisconnect().subscribe(function () {
+                if (!_this.loading) {
+                    _this.loading = _this.loadingCtrl.create({
+                        content: 'Network Disconnected'
+                    });
+                    _this.loading.present();
                 }
-            }, 3000);
-            if (_this.loading) {
-                _this.loading.dismiss();
-                _this.loading = null;
-            }
+            });
+            _this.network.onConnect().subscribe(function () {
+                // We just got a connection but we need to wait briefly
+                // before we determine the connection type. Might need to wait.
+                // prior to doing any api requests as well.
+                setTimeout(function () {
+                    if (_this.network.type === 'wifi') {
+                        console.log('we got a wifi connection, woohoo!');
+                    }
+                }, 3000);
+                if (_this.loading) {
+                    _this.loading.dismiss();
+                    _this.loading = null;
+                }
+            });
         });
     };
-    ;
     MyApp.prototype.openPage = function (page) {
         // Reset the content nav to have just this page
         // we wouldn't want the back button to show in this scenario
