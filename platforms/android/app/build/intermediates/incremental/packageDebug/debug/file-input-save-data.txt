@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Aug 30 14:33:37 AEST 2018
+#Thu Aug 30 16:04:42 AEST 2018
 122.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\cordova-js-src\\exec.js
 60.set=ASSET
 129.file=D\:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-ldpi-v4\\icon.png

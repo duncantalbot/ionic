@@ -18,7 +18,7 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 export class RegisterPage {
 
   registerForm: FormGroup;
-  image: string = 'assets/images/logo.png';
+  image: string = './assets/images/logo.png';
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
   private viewCtrl: ViewController,
@@ -73,7 +73,6 @@ export class RegisterPage {
       targetWidth: 100,
       correctOrientation: true,
       allowEdit: true,
-      destinationType: this.camera.DestinationType.FILE_URI,
       encodingType: this.camera.EncodingType.PNG,
       mediaType: this.camera.MediaType.PICTURE,
       cameraDirection: this.camera.Direction.FRONT
@@ -85,7 +84,7 @@ export class RegisterPage {
       this.image = imageData;
       console.log(imageData);
     }, (err) => {
-        console.log('Error obtaining picture')
+        console.log('Error obtaining picture from library')
     });
   }
 
