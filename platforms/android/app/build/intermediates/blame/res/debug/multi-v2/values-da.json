@@ -4,7 +4,7 @@
             "outputFile": "D:\\Duncan\\Coursera\\IonicCordova\\Ionic\\conFusion\\ionic\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-da\\values-da.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\talbotd\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0-rc02.aar\\f0e7c2fb002b1cd59419e452d96fca98\\res\\values-da\\values-da.xml",
+                    "source": "C:\\Users\\talbotd\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\0c159afdc1d5f0791167012ce5f62a20\\res\\values-da\\values-da.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
